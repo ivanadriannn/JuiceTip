@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.slick-dots {
+    position: absolute;
+    bottom: 5%;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #10B981 !important;
+}
+
+.slick-dots li button:before {
+    font-size: 10px !important;
+    opacity: 1 !important;
+}
+
+.slick-arrow,
+.slick-next,
+.slick-prev {
+    visibility: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background: #5d5d5d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #10B981;
+    border-radius: 0.5rem;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+.section {
+    background-color: #10B981;
+    display: flex;
+}
+
+.text-fafafa {
+    color: #fafafa;
+}
+
+.text-bcbec0 {
+    color: #bcbec0;
+}
+
+.bg-e5e5e5 {
+    background-color: #e5e5e5;
+}
+
+.text-5d5d5d {
+    color: #5d5d5d;
+}
+
+.text-10b981 {
+    color: #10B981;
+}
+
+.text-8c8c8c {
+    color: #8c8c8c;
+}
+
+.text-b5b8b9 {
+    color: #b5b8b9;
+}
+
+.text-ababab {
+    color: #ababab;
+}
+
+.text-232323 {
+    color: #232323;
+}
+
+.bg-10b981 {
+    background-color: #10B981;
+}
+
+.bg-bcbec0 {
+    background-color: #bcbec0;
+}
+
+.bg-d9d9d9 {
+    background-color: #d9d9d9;
+}
+
+.bg-fafafa {
+    background-color: #fafafa;
+}
+
+.bg-d1d1d1 {
+    background-color: #d1d1d1;
+}
+
+.bg-modal {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.border-10b981 {
+    border: #10B981 3px solid;
+}
+
+.otp-input {
+    margin: 2rem 0.3rem 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    font-weight: 600;
+}
+
+.otp-input[type=text] {
+    border: #10B981 3px solid;
+    font-size: 1.5rem;
+}
+
+.button-logo {
+    border: #10B981 4.5px solid;
+    border-radius: 3rem;
+}
+
+#triangle {
+    border: #5d5d5d solid;
+    border-width: 0 0.5rem 0.5rem 0;
+    display: inline-block;
+    padding: 1rem;
+    transform: rotate(135deg);
+}
+
+#three-dot {
+    list-style-type: none;
+}
+
+#three-dot li {
+    font-size: 2rem;
+    background: #5d5d5d;
+    height: 1rem;
+    width: 1rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+}
+
+.bg-wallpaper {
+    background-image: url("./assets/images/wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #becfc9;
+}
+
+.circle {
+    background-color: #10B981;
+    width: 75rem;
+    height: 45rem;
+    border-radius: 75% 50% 0 0;
+    position: absolute;
+    z-index: -40;
+    right: 0;
+    bottom: 0;
+}
+
+.star::before {
+    content: "★";
+    color: #ffdf4d;
+    width: 2rem;
+    height: 2rem;
+    font-size: 5rem;
+    padding: 0;
+}
+
+input[type=radio] {
+    width: 25px;
+    height: 25px;
+}
+
+.product-card-logo {
+    border: #10B981 5px solid;
+    border-radius: 1rem;
+}
+
+.border-add-product {
+    border: #5d5d5d 1px solid;
+}
+
+.bg-balance {
+    background-image: url("./assets/images/balanceBackground.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.shadow {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.skeleton {
+    opacity: .5;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeletonChat {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.close {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+    width: 28px;
+    height: 28px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 4px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 818px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    #triangle {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 40%;
+    }
+}
